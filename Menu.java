@@ -13,7 +13,7 @@ public class Menu {
 
     public static int getUserChoice() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Válasszon menüpontot: ");
+        System.out.print("Válassz menüpontot: ");
         return scanner.nextInt();
     }
 }
