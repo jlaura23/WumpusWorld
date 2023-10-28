@@ -19,7 +19,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    //Pályaszerkesztő inicializálása
+                    //Pályaszerkesztő
                     editor.editBoard();
                     break;
                 case 2:
@@ -39,15 +39,15 @@ public class Main {
                     isRunning = false;
                     break;
                 default:
-                    System.out.println("Nem megfelelő választás. Kérjük, válasszon egy érvényes menüpontot.");
+                    System.out.println("Hiba. Válassz egy érvényes menüpontot.");
                     break;
             }
         }
     }
         private static Player getPlayerName () {
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Wumplusz játék\n");
-            System.out.print("Kérem, adja meg a felhasználónevet: ");
+            System.out.print("WumpluszWorld Játék\n");
+            System.out.print("Add meg a felhasználóneved: ");
             String playerName = scanner.nextLine();
             return new Player(playerName);
         }
