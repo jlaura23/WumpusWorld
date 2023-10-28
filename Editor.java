@@ -72,17 +72,16 @@ public class Editor {
     }
 
     private char[][] createEmptyBoard(int N) {
-        //
         char[][] board = new char[N][N];
 
-        // Első és utolsó sorban falak
+        // Falak az első és utolsó sorban
         for (int i = 0; i < N; i++) {
             board[0][i] = 'F';
             board[N - 1][i] = 'F';
         }
 
 
-        // Első és utolsó oszlopban falak
+        // Falak az első és utolsó oszlopban
         for (int i = 0; i < N; i++) {
             board[i][0] = 'F';
             board[i][N - 1] = 'F';
@@ -93,7 +92,6 @@ public class Editor {
     }
 
     private void printBoard(char[][] board) {
-        //
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 System.out.print(board[i][j] + " ");
@@ -103,7 +101,6 @@ public class Editor {
     }
 
     private void addWall() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a fal pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -118,7 +115,6 @@ public class Editor {
     }
 
     private void addPit() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a verem pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -134,7 +130,6 @@ public class Editor {
     }
 
     private void addWumpus() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a wumpusz pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -149,7 +144,6 @@ public class Editor {
     }
 
     private void addGold() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg az arany pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -164,7 +158,6 @@ public class Editor {
     }
 
     private void addHero() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a hős pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -179,7 +172,6 @@ public class Editor {
     }
 
     private void removeWall() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a fal pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -194,7 +186,6 @@ public class Editor {
     }
 
     private void removePit() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a verem pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -206,11 +197,9 @@ public class Editor {
         } else {
             System.out.println("Érvénytelen pozíció vagy a mező üres.");
         }
-
     }
 
     private void removeWumpus() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a wumpusz pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -225,7 +214,6 @@ public class Editor {
     }
 
     private void removeGold() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg az arany pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
@@ -240,7 +228,6 @@ public class Editor {
     }
 
     private void removeHero() {
-        //
         Scanner scanner = new Scanner(System.in);
         System.out.print("Add meg a hős pozícióját (pl. 'b3'): ");
         String positionStr = scanner.next().toLowerCase();
